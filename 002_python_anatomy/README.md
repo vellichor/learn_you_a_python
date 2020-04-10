@@ -73,6 +73,8 @@ This time we didn't get our string back. But now...
 >>> b
 ```
 
+We've assigned a value to `b`, so the REPL will give us back that value if we ask for `b`.
+
 `=` is Python's *assignment operator*. Our assignment statement has two operands: the thing on the left and the thing on the right. The left hand side (LHS) of an assignment is a `variable name` and the RHS is the value we want that name to represent. The assignment operation sticks them together: from now on, unless we change it, every time we type `b`, the interpreter knows we mean a `string` with the contents "Badger badger badger".
 
 So let's get back to our mathematical comparison problem (and this time we'll throw in some assignment, for fun):
