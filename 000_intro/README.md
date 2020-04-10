@@ -10,6 +10,20 @@ Some other tools you might consider:
 * emacs, a very full-featured editor for the terminal which allows some scripting of its own and a wide variety of useful plugins
 * vim, a slightly less full featured but much less complicated editor for the terminal
 
+## Conventions For Commands
+
+When there's something to type at the command prompt, I'll show it with a `$` in front of it:
+
+```
+$ ls -l
+```
+
+When there's something to type at the Python prompt, I'll show it with Python's triple arrow:
+
+```
+>>> print("Hello, world!")
+```
+
 ### Linux
 
 If you are running Linux, it's almost certain that Python is already installed. Here's how to tell if it's there. Get to a terminal and type:
@@ -22,7 +36,7 @@ If you see something like
 
 
 ```
-pomelo:learn_you_a_python chi$ which python
+$ which python
 /usr/local/opt/python/libexec/bin/python
 ```
 
@@ -84,7 +98,7 @@ If you see something like
 
 
 ```
-pomelo:learn_you_a_python chi$ which python
+$ which python
 /usr/local/opt/python/libexec/bin/python
 ```
 

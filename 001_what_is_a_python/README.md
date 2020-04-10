@@ -28,7 +28,7 @@ OK awesome!! Fire up that REPL again by entering `python` at the command line.
 You should see something like
 
 ```
-pomelo:learn_you_a_python chi$ python
+$ python
 Python 3.7.7 (default, Mar 10 2020, 15:43:27) 
 [Clang 10.0.0 (clang-1000.11.45.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.

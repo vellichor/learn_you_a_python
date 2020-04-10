@@ -107,3 +107,5 @@ In checking the type of your variable, you've just used a `built-in function`! `
 ## Function Function, What's Your Function?
 
 A `function` is another class of `object`. A function is a way to attach a name to a block of statements, and then apply that block of statements to some values. The block of statements is called the *body* of the function, and the values you give it are the *arguments*. `type()` is a function named `type` that takes one `argument`. We supply the argument to the function by putting it between the parentheses. When we apply a function to some value or values, we say that we've *called* it. Calling a function is, in turn, another kind of statement!
+
+This section is short, but you'll use functions all the time. ALL the time.
