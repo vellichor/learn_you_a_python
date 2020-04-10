@@ -18,13 +18,13 @@ Functions, you see, are one kind of callable object Python understands. A functi
 
 A method is a callable object that is BOUND. In particular, it's bound to an object of a certain class. All objects that have the same class also have the same methods bound to them. That means EVERY STRING we've ever made had a format() method attached to it. You call it by first naming the object you want to use it with (`message` for us), then joining it with a `.` to the name of the method you want to call. You fill up the `()` with arguments you want to pass in, just like other callables.
 
-Why did we never use it before? That's because of what the `string.format()` method does (we'll refer to it that way, so that it's easy to see it belongs to the `string` class.) This method looks at its bound string to see where there are holes in it to plug arguments into (those look like `{}` inside the string.) Then it plugs in its arguments in order, converting them to strings first (`str()`) if it needs to. In essence, it has one extra invisible argument: ITSELF.
+Why did we never use it before? That's because of what the `str.format()` method does (we'll refer to it that way, so that it's easy to see it belongs to the `string` class.) This method looks at its bound string to see where there are holes in it to plug arguments into (those look like `{}` inside the string.) Then it plugs in its arguments in order, converting them to strings first (`str()`) if it needs to. In essence, it has one extra invisible argument: ITSELF.
 
 Our earlier strings just didn't have any holes in them, so there wouldn't have been any place to plug stuff in. That's all.
 
 Try formatting some strings in the REPL. See what happens if you supply more arguments than holes, or more holes than arguments! It's a good idea to try things out in the REPL that you already know won't work. That means if you get that error message later on when you run a script, you'll have an idea of what might have gone wrong to cause it.
 
-This is a great time to introduce you to the [Python Library Reference](https://docs.python.org/3.7/library/string.html), which will tell you all about the built-in classes and functions, their methods, and how to use them. Go see what else a `string` can do, and we'll cut this lesson short so you can play around in the REPL and make it say silly stuff.
+This is a great time to introduce you to the [Python Library Reference](https://docs.python.org/3.7/library/stdtypes.html#str), which will tell you all about the built-in classes and functions, their methods, and how to use them. Go see what else a `string` can do, and we'll cut this lesson short so you can play around in the REPL and make it say silly stuff.
 
 * You can't always call all functions wherever you want! Later we'll talk about scope.
 

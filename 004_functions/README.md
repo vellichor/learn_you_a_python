@@ -6,7 +6,7 @@ From now on, you're going to have to pay a lot of attention to the whitespace ch
 
 ## The First Function
 
-In the sample script for this section, I've defined a simple function that adds 5 to a number. Let's look through the anatomy of the function, and the script it lives in
+In the sample script for this section, `function_sample.py`, I've defined a simple function that adds 5 to a number. Let's look through the anatomy of the function, and the script it lives in.
 
 ### The First Line
 
