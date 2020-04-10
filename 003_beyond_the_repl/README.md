@@ -34,7 +34,19 @@ This difference is easier to spot, because it's right there in the file.
 
 ### Marking The File Executable
 
-If you're using Windows, this difference doesn't even exist, so you certainly won't have been able to find it. However, on Mac OSX or any *nix, files you want to execute have to be "marked" in the filesystem as executable first. When constructing this tutorial, I ran
+If you're using Windows, this difference doesn't even exist, so you certainly won't have been able to find it. However, on Mac OSX or any *nix, files you want to execute have to be "marked" in the filesystem as executable first. You can see this difference if you list the contents of the directory:
+
+```
+$ ls -l
+total 24
+-rw-r--r--@ 1 chi  staff  2576 Apr  9 21:13 README.md
+-rw-r--r--@ 1 chi  staff    45 Apr  9 16:42 sample.py
+-rwxr-xr-x@ 1 chi  staff    69 Apr  9 20:40 standalone_sample.py
+```
+
+`standalone_sample.py` has the executable bits set -- look at those extra `x`s.
+
+When constructing this tutorial, I set them by running
 
 ```
 $ chmod +x standalone_sample.py 
