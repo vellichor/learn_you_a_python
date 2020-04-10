@@ -36,6 +36,20 @@ then Python is already installed. If you don't see that second line show up, you
 
 Then verify it's installed by using `which python` again. If you still don't see a second line of output, something went wrong and you're about to get two more powerful lessons in programming: "Googling the error message" and "reading stackoverflow.com." Do those things and try to fix your problems -- you'll know you've won when you can `which python` and get a second line of output that ends in `/python`.
 
+Lastly, I've written this guide for Python 3, since Python 2.7 was sunset as of January 1st, 2020. Check your Python version this way:
+
+```
+python --version
+```
+
+If it gives you a version number that does not start with 3, try
+
+```
+python3 --version
+```
+
+If that gets you a version number and not an error message, you'll be using `python3` wherever I use `python` in the following sections.
+
 Now install a text editor. Use your Googling skills to find and install the one you want.
 
 Then meet us in `Section 001`.

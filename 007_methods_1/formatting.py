@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 def find_my_stuff(stuff):
   message = "Darling, where are my {}"

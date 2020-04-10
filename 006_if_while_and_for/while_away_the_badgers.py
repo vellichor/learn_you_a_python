@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 def say_it_n_times(thing_to_say, num_times):
   times = 0 # we have done this 0 times so far

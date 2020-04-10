@@ -44,5 +44,16 @@ Those `>>>` arrows are your Python prompt, and everything you type there will be
 
 What happened there? Well, you entered the text "Badger badger badger" in quotes. (We'll call any item of regular old text a `string`, so you created a `string` with the contents "Badger badger badger".) The interpreter *read* your opening quote, said "Aha! A string is coming!" and *evaluated* everything up until the closing quote into a brand new `string`. Then, it *printed* your new string so you could see what you made.
 
+If you were to type it without the quotes, something very different would happen.
+
+```
+>>> badger
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'badger' is not defined
+```
+
+Because this was not a quoted string, your interpreter went looking around for something it knew about called "badger". Unfortunately, it doesn't know about badgers yet, so it told you so. Remember this error message! You will probably see it a lot. 
+
 Next, we'll look at what else you can do in the REPL.
 
