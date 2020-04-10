@@ -16,7 +16,7 @@ Finally there's the `:` indicating that there's going to be an indented body com
 
 ## The `__init__()` Method
 
-If we want to make a new Animal, we need to be able to set up the basic properties that it has. Our Animal has a color. We define a method inside a class just as we would define a function outside of the class context. The difference is that invisible argument we mentioned in the last section. There really IS an invisible argument to all bound methods, and that argument is _the bound object itself_! By convention, we call it `self`.
+If we want to make a new Animal, we need to be able to set up the basic properties that it has. Our Animal has a color. We define a method inside a class just as we would define a function outside of the class context, using the `def` keyword, and the basic anatomy is the same. The difference is that invisible argument we mentioned in the last section. There really IS an invisible argument to all bound methods, and that argument is _the bound object itself_! By convention, we call it `self`.
 
 The `__init__()` method is a special name for the method that will be invoked when we call our class. (Yep, a class is a callable too! Calling it invokes the `__init__()` method and then returns the initialized object.)
 
