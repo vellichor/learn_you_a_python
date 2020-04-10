@@ -19,15 +19,15 @@ To see the type of object you have, use `type()`:
 
 Knowing what type an object is is important, because the type of an object determines what kind of operations can be applied to it. So, what kind of operations can we apply to these objects?
 
-## Statements and Operators
+## Statements, Expressions and Operators
 
-Just like a spoken language, a scripting language is composed of statements. A statement is, roughly speaking, one line of a script. Each of our `type()` lines above was a statement, and so was our badgery `string` creation: they are each a unit of code that makes the interpreter do something using the computer.
+Just like a spoken language, a scripting language is composed of expressions and statements. Each of these is, roughly speaking, one unit of code that makes the interpreter do something using the computer. Each of our `type()` lines above was an expression, and so was our badgery `string` creation: when we evaluate them, they have a value that the REPL can return. A statement, on the other hand, generally makes some kind of change to its local environment -- it may also have a value when evaluated, and if so, it can also be used as an expression.
 
-So what kind of more interesting statements are there?
+So what kind of more interesting expressions and statements are there?
 
 ### Math
 
-The standard math operators exist in Python. Try the following statements:
+The standard math operators exist in Python. Try the following expressions:
 
 ```
 >>> 5 + 2
@@ -75,7 +75,9 @@ This time we didn't get our string back. But now...
 
 We've assigned a value to `b`, so the REPL will give us back that value if we ask for `b`.
 
-`=` is Python's *assignment operator*. Our assignment statement has two operands: the thing on the left and the thing on the right. The left hand side (LHS) of an assignment is a `variable name` and the RHS is the value we want that name to represent. The assignment operation sticks them together: from now on, unless we change it, every time we type `b`, the interpreter knows we mean a `string` with the contents "Badger badger badger".
+`=` is Python's *assignment operator*. Our assignment statement has two operands: the thing on the left and the thing on the right. The left hand side (LHS) of an assignment is a `variable name` and the RHS is an expression giving the value we want that name to represent. The assignment operation sticks them together: from now on, unless we change it, every time we type `b`, the interpreter knows we mean a `string` with the contents "Badger badger badger".
+
+This statement has made a change to its environment: before we made the statement, `b` was not defined, and after we made it `b` was defined and had a value.
 
 So let's get back to our mathematical comparison problem (and this time we'll throw in some assignment, for fun):
 
@@ -104,4 +106,4 @@ In checking the type of your variable, you've just used a `built-in function`! `
 
 ## Function Function, What's Your Function?
 
-A `function` is another class of `object`. A function is a way to attach a name to a block of statements, and then apply that block of statements to some values. The block of statements is called the *body* of the function, and the values you give it are the *arguments*. `type()` is a function named `type` that takes one `argument`. When we apply a function to some value or values, we say that we've *called* it. Calling a function is, in turn, another kind of statement!
+A `function` is another class of `object`. A function is a way to attach a name to a block of statements, and then apply that block of statements to some values. The block of statements is called the *body* of the function, and the values you give it are the *arguments*. `type()` is a function named `type` that takes one `argument`. We supply the argument to the function by putting it between the parentheses. When we apply a function to some value or values, we say that we've *called* it. Calling a function is, in turn, another kind of statement!
