@@ -20,7 +20,7 @@ What directories does it search? For this, head back to the REPL and do this:
 
 You got back a `list` of `strings`, defining the Python interpreter's search order. First on the list is `''`, an empty string. That's why Python knows to look in the local directory first!
 
-The rest of them are defined by the `sys` module that comes with your install of Python. You might notice that they all start with `/`: they are all explicit paths that specify a path all the way from the root of your filesystem. Some are ZIP files, and some are directories -- there's logic in the interpreter to help it do the right thing with each of these.
+The rest of them are defined by the `sys` module that comes with your install of Python. You might notice that they all start with `/`: they are all explicit paths that specify a path all the way from the root of your filesystem. Some are ZIP files, and some are directories -- there's logic in the interpreter to help it do the right thing with each of these. For a directory, it sticks the whole path to the front of the file or directory it's looking for, and sees if that exists: `/blah/blah/blah/possumpouch.py` or `/blah/blah/blah/possumpouch/`. For a ZIP file, it treats the ZIP file contents like a directory, and does the same thing.
 
 ## OK, Show Me Your Package!
 
@@ -32,7 +32,7 @@ Inside the tools directory, there are some modules. They're submodules of the to
 
 Right now, we can load these submodules by using the `.` notation in our import statement: `import tools.tools`. You can see that we've done that in `main.py`.
 
-So a package is just this: a set of nested directories with `__init__.py` files in them, and maybe some submodules, which can be files or directories themselves.
+So a package is just this: a set of nested modules with `__init__.py` files in them, and maybe some submodules, which can be files or directories themselves.
 
 Our `main.py` goes on to use some functions from these submodules, and you'll notice that the function names are fully specified, from the top level of the package. How else could we do it?
 
@@ -49,3 +49,7 @@ You know, tools.tools is kind of redundant. It would be nice if the tools packag
 You know that the `__init__.py` defines the namespace when a module is a directory. What can you do to put all the functions from `tools.py` into the `tools` namespace?
 
 (Remember that you can import all members of one namespace into another by taking advantage of `*`!)
+
+### One More Note About Search Order
+
+When you ask the module loader to `import tools.math_tools`, it does something you are already familiar with: it takes the first part of the module path (before the first `.`) and tries to resolve that. Then, it uses the module loader to see what else is in the module it found, and see if there are submodules that match. That's why our `from` notation works: when the module loader loads the `tools` module, it finds out about the submodules inside right away.
