@@ -44,4 +44,4 @@ For a really exhaustively complete list of types that Python supports, go on in 
 
 ## Build Your Own Example
 
-There's no sample code for this section, but feel free to take a crack at writing a script from scratch to try out a couple of these new types.
+There's no sample code for this section, since we did it all in the REPL, but feel free to take a crack at writing a script from scratch to try out a couple of these new types.
