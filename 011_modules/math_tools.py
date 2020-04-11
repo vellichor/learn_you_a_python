@@ -22,12 +22,13 @@ def sqrt(x):
   y_sq = y * y
   # if it's too far off, try adjusting it.
   while abs(y_sq - x) > 0.001:
-    # if it's too small, increase it by half its value
+    # if it's too small, increase it a little
     if y * y < x:
-      y = y * 1.5
+      y = y * 1.1
     else:
-      # it's too big. decrease it by 10%.
-      y = y * 0.9
+      # it's too big. decrease it a little
+      y = y * 0.999
+    y_sq = y * y
   # if we broke out of the loop, we got close enough.
   return y
 
