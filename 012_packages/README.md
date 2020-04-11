@@ -56,8 +56,10 @@ When you ask the module loader to `import tools.math_tools`, it does something y
 
 ## Holy Cow!
 
-You now know how to create functions and classes. You know how to call methods of the instances you create, and how to trace execution flow of your program through the call stack and the branches and loops of control flow statements. You know how to print out the state of variables, including their values and types, so that you know what's going wrong. Finally, you know how to package your code into logical modules and packages, so that your scripts don't get long and unreadable.
+You now know how to create functions and classes. You know how to call methods of the instances you create, and how to trace execution flow of your program through the call stack and the branches and loops of control flow statements. You know how to print out the state of variables, including their values and types, so that you know what's going wrong. Finally, you know how to package your code into logical modules and packages, so that your scripts don't get long and unreadable. If you're new to programming, then that entire paragraph wouldn't have made sense to you before we mucked through all this!
 
-So from now on, you have no excuse! Muahahahahaha. From this point on, all the sections are going to include notes on STYLE. Not makeup pointers, but information about good programming habits that keep your code readable and reduce the likelihood of hard-to-find bugs.
+You smart cookie, you. So good at working hard and figuring things out.
+
+So from now on, you have no excuse. Muahahahahaha! From this point on, all the sections are going to include notes on STYLE. Not makeup pointers, but information about good programming habits that keep your code readable and reduce the likelihood of hard-to-find bugs.
 
 From here on out, individual sections will also build on each other a bit less, so you will have an easier time skipping around. As always, though, if you find a piece of terminology that confuses you, 1) try looking in earlier sections, and 2) GOOGLE IT, YOU MARVELOUS DINGUS! This guide certainly doesn't have all the answers. It's only written by one little possum. ~(;;;)>
