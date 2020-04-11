@@ -53,3 +53,11 @@ You know that the `__init__.py` defines the namespace when a module is a directo
 ### One More Note About Search Order
 
 When you ask the module loader to `import tools.math_tools`, it does something you are already familiar with: it takes the first part of the module path (before the first `.`) and tries to resolve that. Then, it uses the module loader to see what else is in the module it found, and see if there are submodules that match. That's why our `from` notation works: when the module loader loads the `tools` module, it finds out about the submodules inside right away.
+
+## Holy Cow!
+
+You now know how to create functions and classes. You know how to call methods of the instances you create, and how to trace execution flow of your program through the call stack and the branches and loops of control flow statements. You know how to print out the state of variables, including their values and types, so that you know what's going wrong. Finally, you know how to package your code into logical modules and packages, so that your scripts don't get long and unreadable.
+
+So from now on, you have no excuse! Muahahahahaha. From this point on, all the sections are going to include notes on STYLE. Not makeup pointers, but information about good programming habits that keep your code readable and reduce the likelihood of hard-to-find bugs.
+
+From here on out, individual sections will also build on each other a bit less, so you will have an easier time skipping around. As always, though, if you find a piece of terminology that confuses you, 1) try looking in earlier sections, and 2) GOOGLE IT, YOU MARVELOUS DINGUS! This guide certainly doesn't have all the answers. It's only written by one little possum. ~(;;;)>
