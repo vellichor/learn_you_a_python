@@ -22,7 +22,7 @@ The `__init__()` method is a special name for the method that will be invoked wh
 
 Inside the `__init__()` method, we set the properties our animal will have. Each property is bound to the object in the same way that the method is, so we refer to it the same way: joining the bound property to the bound object with a `.` like `self.color`. We set the type of this animal to the literal "animal."
 
-Down on line 19, you can see that we can create an Animal now, passing in the color. The invisible `self` argument is supplied by the interpreter when it runs your code.
+Down on line 22, you can see that we can create an Animal now, passing in the color. The invisible `self` argument is supplied by the interpreter when it runs your code.
 
 ## The `eat()` Method
 
