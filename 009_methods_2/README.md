@@ -37,3 +37,16 @@ Since the superclass sets its type to "animal", we need to first make sure the s
 ## One More Method
 
 Possums are good at hiding.
+
+## Creating Our Objects
+
+Now that we've defined for the interpreter what an Animal and a Possum are, we can create some. I'm going to introduce the term `instance` at this point, which is how we refer to a particular item we've created in our script: `critter` is an _instance_ of `Animal`. This piece of vocabulary will come in handy when we're talking about a number of different instances in the same script that all have the same type, as well as for differentiating between the two ways we can call these functions we define in the class.
+
+### Instance Methods
+
+After creating our instance of `Animal` on line 22, we call the method we defined, binding it to the instance. Since it's bound to the instance, we have our invisible `self` argument supplied for us, and we only need to supply the food we want our `critter` to eat.
+
+### Class Methods
+
+For our Possum, we show both ways of calling the `eat()` method. First, we bind it to the instance again. But the second time, we instead bind it to the `class` that defines it! This time, the `self` argument is not supplied by the interpreter, because from the `class` scope, we don't know which _instance_ of `Possum` to use. That means we supply both arguments explicitly in the call.
+ 

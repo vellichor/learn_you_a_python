@@ -24,4 +24,5 @@ critter.eat("kibble")
 
 my_critter = Possum("grey")
 my_critter.eat("trash")
+Possum.eat(my_critter, "compost")
 my_critter.hide()

@@ -81,6 +81,8 @@ What if you get tired of writing "badger" all the time? What if, for some reason
 
 Check out `while_away_the_badgers.py` for an example of how we might do this.
 
+* You'll see something new here: the comment! On lines 4 and 7, we see a `#` symbol followed by a note about what the code is doing. The `#` symbol is a note to the Python interpreter to ignore everything that comes after it and go on to the next line. Not only can we use this to make our code more readable to others, it's a good idea to do it for yourself -- if you come back to your code 2 or 3 years later and need to make head or tail of it, the comments really help!
+
 ### In A While
 
 `while` is the simplest form of looping operator. `while` evaluates its expression (`times < num_times` in our case) and if it's True, it runs its indented body. Then, it does it again. And again. And again. If the expression ever evaluates to False, however, it immediately exits, does not pass Go, does not execute the statements in the body, and returns execution flow to the next thing in line.
@@ -117,9 +119,9 @@ What "iterable" means, for now, is that a `for` loop can use this expression, an
 
 This is new too! Let's break it down. You have the `for` keyword, and then the symbol`rad_type`. This is a variable name we're going to use to represent the list member we're working on for this go-around. (Each go-around is called an `iteration`.) Then we have the `in` keyword, which means that the next thing is the expression we will pick values of `rad_type` from. Last, we have the `:` we usually find before an indented block.
 
-#### The `range()` Function
+#### The `range` object
 
-`range()` takes a numeric argument, and hands back numbers in order until it gets to the number you gave it. Run this code and see if anything surprises you about the numbers you get. Think back to what you got when you asked for `rad_types[1]`. Notice anything?
+`range()` uses the arguments you give it to set up a list of numbers, which it will hand back in order. Run this code and see if anything surprises you about the list of numbers you get. Think back to what you got when you asked for `rad_types[1]`. Notice anything?
 
 #### Zero-Indexing
 
