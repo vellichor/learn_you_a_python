@@ -66,7 +66,7 @@ Try that in the REPL, and you'll see that we have added the `warning` function f
 
 You can import all attributes from a module (everything in its global scope) into your global scope with `from $module import *`
 
-* That's another programming convention! Putting $ in front of a string in some instructions means "instead of $whatever, put the value you want, without the $.")
+* That's another programming convention! Putting $ in front of a string in some instructions means "instead of $whatever, put the value you want, without the $." You may also see something like `from <module> import *`, which means the same thing: replace the whole thing, `<>` and all.)
 
 Here, let's try changing the import line of `main.py` to `from math_tools import *`. If you run it just like that, is the result what you expected? What else do you have to change so that your script can run?
 
