@@ -14,7 +14,7 @@ NameError: name 'x' is not defined
 
 ## What gives?
 
-Well, each of these functions defines its own _scope_. That is, when we are inside this function, we can define some variables, and those names exist as long as we're inside that function. Once our execution flow steps outside the function, though, those variables go _out of scope_: we no longer have access to the things we knew inside that function. We call the set of names that are defined in each scope its `namespace`.
+Well, each of these functions defines its own _scope_. That is, when we are inside this function, we can define some variables, and those names exist as long as we're inside that function. Once our execution flow steps outside the function, though, those variables go _out of scope_: we no longer have access to the things we defined inside that function.
 
 At any given point in your execution flow, the interpreter is aware of some symbols, and not aware of others. Moreover, each symbol that the interpreter is aware of in this moment maps to exactly one value. (How else could it get anything done?) The symbols that are currently known to the interpreter, and their values, are determined by the layers of _scope_ you are in.
 
@@ -32,6 +32,7 @@ When we operate inside a class definition, we layer on another new scope, which 
 
 The set of names defined in a certain scope is called a _namespace_. When the interpreter is executing your code and encounters a symbol it needs to look up, it checks each of these namespaces in order, from the top layer of scope, to the one underneath, to the one underneath, all the way down to the global scope. As soon as it finds a matching name, it decides that's what you meant and moves on. If it doesn't find any match, it returns a NameError, like the one we've seen so many times.
 
+Each name exists exactly once _per namespace_: if we assign it again, in the same namespace, it replaces the value that was there before. But a name can be defined in multiple namespaces, and if you reference that name from a particular scope, you'll get whichever one is the first one the interpreter finds as it walks down the stack.
 
 ### Scopes Have State
 
