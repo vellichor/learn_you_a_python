@@ -4,7 +4,7 @@ This one is long, because we're going to establish a lot of vocabulary for talki
 
 ## Objects
 
-The basic unit of stuff in the Python environment is an object. When we made our badger string last time, we created a string `object`. There are a couple basic types, or `classes`, including the `string` and a few different numeric classes, like `int`, `float`, and `double`. We'll get into more differences later, but an `int` has no fractional part (no decimal point or any stuff after it) and the others do.
+The basic unit of stuff in the Python environment is an object. When we made our badger string last time, we created a string `object`. There are a couple basic types, or `classes`, including the `string` and a few different numeric classes, like `int` and `float`. We'll get into more differences later, but an `int` has no fractional part (no decimal point or any stuff after it) and the others do.
 
 To see the type of object you have, use `type()`:
 
